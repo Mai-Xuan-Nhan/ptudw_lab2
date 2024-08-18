@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="action_page.php">
+      User name:
+      <input type="text" name="userid" minlength="4" maxlength="30" required />
+      <br />
+      <br />
+      User password:
+      <input type="password" name="psw" />
+      <br />
+      <br />
+      Tỉnh:
+      <select id="province" name="province">
+        <option value="hcm">TP. Hồ Chí Minh</option>
+        <option value="vung-tau">Vũng Tàu</option>
+        <option value="binh-duong">Bình Dương</option>
+      </select>
+      <br />
+      <br />
+      E-mail:
+      <input type="email" name="email" />
+      <br />
+      <br />
+      Thêm trang web của bạn:
+      <input type="url" name="homepage" />
+      <br />
+      <br />
+      Giới tính:
+      <input type="radio" name="gender" value="male" checked /> Male
+      <input type="radio" name="gender" value="female" /> Female<br />
+      <br />
+      Birthday:
+      <input type="date" name="bday" min="2023-01-01" />
+      <br />
+      <br />
+      Điểm:
+      <input type="number" name="points" min="0" max="10" step="0.5" />
+      <br />
+      Bạn chọn những màu sắc mà mình yêu thích:
+      <input type="color" name="favcolor" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
